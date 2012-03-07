@@ -1,386 +1,204 @@
 <body>
   <h2>usage</h2>
   <pre>
-    new OpenRec(<i>container</i>);
+    new OpenRec(<i>container</i>, [<i>prefix</i>]);
   </pre>
   <dl>
     <dt><i>container</i></dt>
-    <dd>HTML Object what have hierarchical structure children.</dd>
+    <dd>HTML Object which have hierarchical structure children.</dd>
+    <dt><i>prefix(option)</i></dt>
+    <dd>HTML Object's className prefix.<br>
+    </dd>
   </dl>
 
   <h2>examples</h2>
   <ul id="root" class="c1">
     <p>click below LI Element, open its hierarchical structure.</p>
-    <li>class-1
-      <ul class="c2">
-        <li>class2
-          <ul class="c3">
-            <li>class3
-              <ul class="c4">
-                <li>class4 limit!</li>
-                <li>class4 limit!</li>
-                <li>class4 limit!</li>
-                <li>class4 limit!</li>
+    <li class="c"><div class="notOpen">class1</div>
+      <ul >
+        <li class="c"><div class="notOpen">class2</div>
+          <ul >
+            <li class="c"><div class="notOpen">class3</div>
+              <ul >
+                <li class="c">class4 limit!</li>
+                <li class="c">class4 limit!</li>
+                <li class="c">class4 limit!</li>
+                <li class="c">class4 limit!</li>
               </ul>
             </li>
-            <li>class3
-              <ul class="c4">
-                <li>class4 limit!</li>
-                <li>class4 limit!</li>
-                <li>class4 limit!</li>
-                <li>class4 limit!</li>
+            <li class="c"><div class="notOpen">class3</div>
+              <ul >
+                <li class="c">class4 limit!</li>
+                <li class="c">class4 limit!</li>
+                <li class="c">class4 limit!</li>
+                <li class="c">class4 limit!</li>
               </ul>
             </li>
-            <li>class3
-              <ul class="c4">
-                <li>class4 limit!</li>
-                <li>class4 limit!</li>
-                <li>class4 limit!</li>
-                <li>class4 limit!</li>
+            <li class="c"><div class="notOpen">class3</div>
+              <ul >
+                <li class="c">class4 limit!</li>
+                <li class="c">class4 limit!</li>
+                <li class="c">class4 limit!</li>
+                <li class="c">class4 limit!</li>
               </ul>
             </li>
-            <li>class3
-              <ul class="c4">
-                <li>class4 limit!</li>
-                <li>class4 limit!</li>
-                <li>class4 limit!</li>
-                <li>class4 limit!</li>
-              </ul>
-            </li>
-          </ul>
-        </li>
-        <li>class2
-          <ul class="c3">
-            <li>class3
-              <ul class="c4">
-                <li>class4 limit!</li>
-                <li>class4 limit!</li>
-                <li>class4 limit!</li>
-                <li>class4 limit!</li>
-              </ul>
-            </li>
-            <li>class3
-              <ul class="c4">
-                <li>class4 limit!</li>
-                <li>class4 limit!</li>
-                <li>class4 limit!</li>
-                <li>class4 limit!</li>
-              </ul>
-            </li>
-            <li>class3
-              <ul class="c4">
-                <li>class4 limit!</li>
-                <li>class4 limit!</li>
-                <li>class4 limit!</li>
-                <li>class4 limit!</li>
-              </ul>
-            </li>
-            <li>class3
-              <ul class="c4">
-                <li>class4 limit!</li>
-                <li>class4 limit!</li>
-                <li>class4 limit!</li>
-                <li>class4 limit!</li>
+            <li class="c"><div class="notOpen">class3</div>
+              <ul >
+                <li class="c">class4 limit!</li>
+                <li class="c">class4 limit!</li>
+                <li class="c">class4 limit!</li>
+                <li class="c">class4 limit!</li>
               </ul>
             </li>
           </ul>
         </li>
-        <li>class2
-          <ul class="c3">
-            <li>class3
-              <ul class="c4">
-                <li>class4 limit!</li>
-                <li>class4 limit!</li>
-                <li>class4 limit!</li>
-                <li>class4 limit!</li>
+        <li class="c"><div class="notOpen">class2</div>
+          <ul >
+            <li class="c"><div class="notOpen">class3</div>
+              <ul >
+                <li class="c">class4 limit!</li>
+                <li class="c">class4 limit!</li>
+                <li class="c">class4 limit!</li>
+                <li class="c">class4 limit!</li>
               </ul>
             </li>
-            <li>class3
-              <ul class="c4">
-                <li>class4 limit!</li>
-                <li>class4 limit!</li>
-                <li>class4 limit!</li>
-                <li>class4 limit!</li>
+            <li class="c"><div class="notOpen">class3</div>
+              <ul >
+                <li class="c">class4 limit!</li>
+                <li class="c">class4 limit!</li>
+                <li class="c">class4 limit!</li>
+                <li class="c">class4 limit!</li>
               </ul>
             </li>
-            <li>class3
-              <ul class="c4">
-                <li>class4 limit!</li>
-                <li>class4 limit!</li>
-                <li>class4 limit!</li>
-                <li>class4 limit!</li>
+            <li class="c"><div class="notOpen">class3</div>
+              <ul >
+                <li class="c">class4 limit!</li>
+                <li class="c">class4 limit!</li>
+                <li class="c">class4 limit!</li>
+                <li class="c">class4 limit!</li>
               </ul>
             </li>
-            <li>class3
-              <ul class="c4">
-                <li>class4 limit!</li>
-                <li>class4 limit!</li>
-                <li>class4 limit!</li>
-                <li>class4 limit!</li>
-              </ul>
-            </li>
-          </ul>
-        </li>
-        <li>class2
-          <ul class="c3">
-            <li>class3
-              <ul class="c4">
-                <li>class4 limit!</li>
-                <li>class4 limit!</li>
-                <li>class4 limit!</li>
-                <li>class4 limit!</li>
-              </ul>
-            </li>
-            <li>class3
-              <ul class="c4">
-                <li>class4 limit!</li>
-                <li>class4 limit!</li>
-                <li>class4 limit!</li>
-                <li>class4 limit!</li>
-              </ul>
-            </li>
-            <li>class3
-              <ul class="c4">
-                <li>class4 limit!</li>
-                <li>class4 limit!</li>
-                <li>class4 limit!</li>
-                <li>class4 limit!</li>
-              </ul>
-            </li>
-            <li>class3
-              <ul class="c4">
-                <li>class4 limit!</li>
-                <li>class4 limit!</li>
-                <li>class4 limit!</li>
-                <li>class4 limit!</li>
+            <li class="c"><div class="notOpen">class3</div>
+              <ul >
+                <li class="c">class4 limit!</li>
+                <li class="c">class4 limit!</li>
+                <li class="c">class4 limit!</li>
+                <li class="c">class4 limit!</li>
               </ul>
             </li>
           </ul>
         </li>
-        <li>class2
-          <ul class="c3">
-            <li>class3
-              <ul class="c4">
-                <li>class4 limit!</li>
-                <li>class4 limit!</li>
-                <li>class4 limit!</li>
-                <li>class4 limit!</li>
+        <li class="c"><div class="notOpen">class2</div>
+          <ul >
+            <li class="c"><div class="notOpen">class3</div>
+              <ul >
+                <li class="c">class4 limit!</li>
+                <li class="c">class4 limit!</li>
+                <li class="c">class4 limit!</li>
+                <li class="c">class4 limit!</li>
               </ul>
             </li>
-            <li>class3
-              <ul class="c4">
-                <li>class4 limit!</li>
-                <li>class4 limit!</li>
-                <li>class4 limit!</li>
-                <li>class4 limit!</li>
+            <li class="c"><div class="notOpen">class3</div>
+              <ul >
+                <li class="c">class4 limit!</li>
+                <li class="c">class4 limit!</li>
+                <li class="c">class4 limit!</li>
+                <li class="c">class4 limit!</li>
               </ul>
             </li>
-            <li>class3
-              <ul class="c4">
-                <li>class4 limit!</li>
-                <li>class4 limit!</li>
-                <li>class4 limit!</li>
-                <li>class4 limit!</li>
+            <li class="c"><div class="notOpen">class3</div>
+              <ul >
+                <li class="c">class4 limit!</li>
+                <li class="c">class4 limit!</li>
+                <li class="c">class4 limit!</li>
+                <li class="c">class4 limit!</li>
               </ul>
             </li>
-            <li>class3
-              <ul class="c4">
-                <li>class4 limit!</li>
-                <li>class4 limit!</li>
-                <li>class4 limit!</li>
-                <li>class4 limit!</li>
-              </ul>
-            </li>
-          </ul>
-        </li>
-      </ul>
-    </li>
-    <li>class-1
-      <ul class="c2">
-        <li>class2
-          <ul class="c3">
-            <li>class3
-              <ul class="c4">
-                <li>class4 limit!</li>
-                <li>class4 limit!</li>
-                <li>class4 limit!</li>
-                <li>class4 limit!</li>
-              </ul>
-            </li>
-            <li>class3
-              <ul class="c4">
-                <li>class4 limit!</li>
-                <li>class4 limit!</li>
-                <li>class4 limit!</li>
-                <li>class4 limit!</li>
-              </ul>
-            </li>
-            <li>class3
-              <ul class="c4">
-                <li>class4 limit!</li>
-                <li>class4 limit!</li>
-                <li>class4 limit!</li>
-                <li>class4 limit!</li>
-              </ul>
-            </li>
-            <li>class3
-              <ul class="c4">
-                <li>class4 limit!</li>
-                <li>class4 limit!</li>
-                <li>class4 limit!</li>
-                <li>class4 limit!</li>
+            <li class="c"><div class="notOpen">class3</div>
+              <ul >
+                <li class="c">class4 limit!</li>
+                <li class="c">class4 limit!</li>
+                <li class="c">class4 limit!</li>
+                <li class="c">class4 limit!</li>
               </ul>
             </li>
           </ul>
         </li>
-        <li>class2
-          <ul class="c3">
-            <li>class3
-              <ul class="c4">
-                <li>class4 limit!</li>
-                <li>class4 limit!</li>
-                <li>class4 limit!</li>
-                <li>class4 limit!</li>
+        <li class="c"><div class="notOpen">class2</div>
+          <ul >
+            <li class="c"><div class="notOpen">class3</div>
+              <ul >
+                <li class="c">class4 limit!</li>
+                <li class="c">class4 limit!</li>
+                <li class="c">class4 limit!</li>
+                <li class="c">class4 limit!</li>
               </ul>
             </li>
-            <li>class3
-              <ul class="c4">
-                <li>class4 limit!</li>
-                <li>class4 limit!</li>
-                <li>class4 limit!</li>
-                <li>class4 limit!</li>
+            <li class="c"><div class="notOpen">class3</div>
+              <ul >
+                <li class="c">class4 limit!</li>
+                <li class="c">class4 limit!</li>
+                <li class="c">class4 limit!</li>
+                <li class="c">class4 limit!</li>
               </ul>
             </li>
-            <li>class3
-              <ul class="c4">
-                <li>class4 limit!</li>
-                <li>class4 limit!</li>
-                <li>class4 limit!</li>
-                <li>class4 limit!</li>
+            <li class="c"><div class="notOpen">class3</div>
+              <ul >
+                <li class="c">class4 limit!</li>
+                <li class="c">class4 limit!</li>
+                <li class="c">class4 limit!</li>
+                <li class="c">class4 limit!</li>
               </ul>
             </li>
-            <li>class3
-              <ul class="c4">
-                <li>class4 limit!</li>
-                <li>class4 limit!</li>
-                <li>class4 limit!</li>
-                <li>class4 limit!</li>
-              </ul>
-            </li>
-          </ul>
-        </li>
-        <li>class2
-          <ul class="c3">
-            <li>class3
-              <ul class="c4">
-                <li>class4 limit!</li>
-                <li>class4 limit!</li>
-                <li>class4 limit!</li>
-                <li>class4 limit!</li>
-              </ul>
-            </li>
-            <li>class3
-              <ul class="c4">
-                <li>class4 limit!</li>
-                <li>class4 limit!</li>
-                <li>class4 limit!</li>
-                <li>class4 limit!</li>
-              </ul>
-            </li>
-            <li>class3
-              <ul class="c4">
-                <li>class4 limit!</li>
-                <li>class4 limit!</li>
-                <li>class4 limit!</li>
-                <li>class4 limit!</li>
-              </ul>
-            </li>
-            <li>class3
-              <ul class="c4">
-                <li>class4 limit!</li>
-                <li>class4 limit!</li>
-                <li>class4 limit!</li>
-                <li>class4 limit!</li>
+            <li class="c"><div class="notOpen">class3</div>
+              <ul >
+                <li class="c">class4 limit!</li>
+                <li class="c">class4 limit!</li>
+                <li class="c">class4 limit!</li>
+                <li class="c">class4 limit!</li>
               </ul>
             </li>
           </ul>
         </li>
-        <li>class2
-          <ul class="c3">
-            <li>class3
-              <ul class="c4">
-                <li>class4 limit!</li>
-                <li>class4 limit!</li>
-                <li>class4 limit!</li>
-                <li>class4 limit!</li>
+        <li class="c"><div class="notOpen">class2</div>
+          <ul >
+            <li class="c"><div class="notOpen">class3</div>
+              <ul >
+                <li class="c">class4 limit!</li>
+                <li class="c">class4 limit!</li>
+                <li class="c">class4 limit!</li>
+                <li class="c">class4 limit!</li>
               </ul>
             </li>
-            <li>class3
-              <ul class="c4">
-                <li>class4 limit!</li>
-                <li>class4 limit!</li>
-                <li>class4 limit!</li>
-                <li>class4 limit!</li>
+            <li class="c"><div class="notOpen">class3</div>
+              <ul >
+                <li class="c">class4 limit!</li>
+                <li class="c">class4 limit!</li>
+                <li class="c">class4 limit!</li>
+                <li class="c">class4 limit!</li>
               </ul>
             </li>
-            <li>class3
-              <ul class="c4">
-                <li>class4 limit!</li>
-                <li>class4 limit!</li>
-                <li>class4 limit!</li>
-                <li>class4 limit!</li>
+            <li class="c"><div class="notOpen">class3</div>
+              <ul >
+                <li class="c">class4 limit!</li>
+                <li class="c">class4 limit!</li>
+                <li class="c">class4 limit!</li>
+                <li class="c">class4 limit!</li>
               </ul>
             </li>
-            <li>class3
-              <ul class="c4">
-                <li>class4 limit!</li>
-                <li>class4 limit!</li>
-                <li>class4 limit!</li>
-                <li>class4 limit!</li>
-              </ul>
-            </li>
-          </ul>
-        </li>
-        <li>class2
-          <ul class="c3">
-            <li>class3
-              <ul class="c4">
-                <li>class4 limit!</li>
-                <li>class4 limit!</li>
-                <li>class4 limit!</li>
-                <li>class4 limit!</li>
-              </ul>
-            </li>
-            <li>class3
-              <ul class="c4">
-                <li>class4 limit!</li>
-                <li>class4 limit!</li>
-                <li>class4 limit!</li>
-                <li>class4 limit!</li>
-              </ul>
-            </li>
-            <li>class3
-              <ul class="c4">
-                <li>class4 limit!</li>
-                <li>class4 limit!</li>
-                <li>class4 limit!</li>
-                <li>class4 limit!</li>
-              </ul>
-            </li>
-            <li>class3
-              <ul class="c4">
-                <li>class4 limit!</li>
-                <li>class4 limit!</li>
-                <li>class4 limit!</li>
-                <li>class4 limit!</li>
+            <li class="c"><div class="notOpen">class3</div>
+              <ul >
+                <li class="c">class4 limit!</li>
+                <li class="c">class4 limit!</li>
+                <li class="c">class4 limit!</li>
+                <li class="c">class4 limit!</li>
               </ul>
             </li>
           </ul>
         </li>
       </ul>
-    
     </li>
   </ul>
   <script type="text/javascript" src="open-rec.js"></script>
-  <script>new OpenRec(document.getElementById("root"))</script>
+  <script>new OpenRec(document.getElementById("root"), "c")</script>
 </body>
