@@ -5,16 +5,16 @@ function OpenRec(root){
 
   function initialClose(target){
     var ch = target.children;
-    for(var i=0,l=ch.length;i<l;i++){
-      ch[i].style.display="none";
+    for(var i=0,l=ch.length; i<l; i++){
+      ch[i].style.display = "none";
       arguments.callee(ch[i]);
     }
   }
 
   function close(target){
     var ch=target.children;
-    for(var i=0,l=ch.length;i<l;i++){
-      ch[i].style.display="none";
+    for(var i=0,l=ch.length; i<l; i++){
+      ch[i].style.display = "none";
     }
   }
 
@@ -36,11 +36,19 @@ function OpenRec(root){
       flgDontOpen=false;
       return;
     }
-    var ch=target.children;
-    for(var i=0,l=ch.length;i<l;i++){
-      ch[i].style.display="";
-    }
     stack.push(target);
+    var ch = target.children;
+    for(var i=0,l=ch.length; i<l; i++){
+      ch[i].style.display = "";
+      if(ch[i].tagName == "UL"){
+        stack.push(ch[i]);
+        var lis = ch[i].children;
+        for(var _i=0,_l=lis.length; _i<_l; _i++){
+          lis[_i].style.display = "";
+        }
+      }
+    }
+
   }
 
   function recManager(e){
